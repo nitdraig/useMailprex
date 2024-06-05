@@ -181,7 +181,7 @@ export default ContactForm;
 ### Here is an example of how the emails sent through Mailprex will appear when they arrive at the specified email address:
 <div align="center">
   <a href="https://agustin.top/">
-    <img src="https://res.cloudinary.com/draig/image/upload/v1717624258/mailprex/uvc7mvn49rlrpzpeq3vj.png" alt="Example Email" width="400" height="300"/>
+    <img src="https://res.cloudinary.com/draig/image/upload/v1717624258/mailprex/uvc7mvn49rlrpzpeq3vj.png" alt="Example Email" width="500" height="300"/>
   </a>
 </div>
 
