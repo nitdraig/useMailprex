@@ -1,9 +1,9 @@
 {
   "name": "usemailprex",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Send Emails from your Website with Ease",
   "main": "dist/index.js",
-  "types": "types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
