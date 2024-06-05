@@ -1,3 +1,11 @@
+type FormData = {
+  fullname: string;
+  email: string;
+  message: string;
+  phone: string;
+  service: string;
+};
+
 type ApiResponse<T> = {
   data: T | null;
   loading: boolean;
@@ -12,10 +20,14 @@ type UseMailprexProps = {
 };
 
 declare function useMailprex(props: UseMailprexProps): {
-  handleSubmit: (formData: any) => Promise<void>;
+  formData: FormData;
+  handleChange: (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => void;
+  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => Promise<void>;
   response: ApiResponse<any>;
 };
 
-declare module "usemailprex" {
-  export = useMailprex;
-}
+export default useMailprex;

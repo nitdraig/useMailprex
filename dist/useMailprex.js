@@ -11,12 +11,23 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = require("react");
 const useMailprex = ({ url, webName, emailDestiny, formToken, }) => {
+    const [formData, setFormData] = (0, react_1.useState)({
+        fullname: "",
+        email: "",
+        message: "",
+        phone: "",
+        service: "",
+    });
     const [response, setResponse] = (0, react_1.useState)({
         data: null,
         loading: false,
         error: null,
     });
-    const handleSubmit = (formData) => __awaiter(void 0, void 0, void 0, function* () {
+    const handleChange = (e) => {
+        setFormData(Object.assign(Object.assign({}, formData), { [e.target.name]: e.target.value }));
+    };
+    const handleSubmit = (e) => __awaiter(void 0, void 0, void 0, function* () {
+        e.preventDefault();
         try {
             setResponse(Object.assign(Object.assign({}, response), { loading: true }));
             const options = {
@@ -34,6 +45,6 @@ const useMailprex = ({ url, webName, emailDestiny, formToken, }) => {
             setResponse(Object.assign(Object.assign({}, response), { error, loading: false }));
         }
     });
-    return { handleSubmit, response };
+    return { formData, handleChange, handleSubmit, response };
 };
 exports.default = useMailprex;

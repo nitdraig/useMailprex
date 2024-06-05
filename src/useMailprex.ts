@@ -1,5 +1,13 @@
 import { useState } from "react";
 
+type FormData = {
+  fullname: string;
+  email: string;
+  message: string;
+  phone: string;
+  service: string;
+};
+
 type ApiResponse<T> = {
   data: T | null;
   loading: boolean;
@@ -19,13 +27,30 @@ const useMailprex = ({
   emailDestiny,
   formToken,
 }: UseMailprexProps) => {
+  const [formData, setFormData] = useState<FormData>({
+    fullname: "",
+    email: "",
+    message: "",
+    phone: "",
+    service: "",
+  });
+
   const [response, setResponse] = useState<ApiResponse<any>>({
     data: null,
     loading: false,
     error: null,
   });
 
-  const handleSubmit = async (formData: any) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     try {
       setResponse({ ...response, loading: true });
       const options: RequestInit = {
@@ -43,7 +68,7 @@ const useMailprex = ({
     }
   };
 
-  return { handleSubmit, response };
+  return { formData, handleChange, handleSubmit, response };
 };
 
 export default useMailprex;
