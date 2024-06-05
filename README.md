@@ -1,3 +1,24 @@
+<p align="center">
+  <a href="https://agustin.top/">
+    <img src="https://res.cloudinary.com/draig/image/upload/v1717622939/mailprex/eapviaubjcmlkosqwxw6.png" alt="Mailprex Logo" width="200" height="165">
+  </a>
+</p>
+
+<h3 align="center">useMailprex | React Hook to MAILPREX</h3>
+
+<p align="center">
+ Send Emails from your Website with Ease
+  <br>
+  <a href="https://agustin.top/"><strong>Explore Mailprex docs »</strong></a>
+  <br>
+  <br>
+  <a href="https://github.com/nitdraig/usemailprex/issues">Report bug</a>
+  ·
+  <a href="https://github.com/nitdraig/usemailprex/issues">Request feature</a>
+  ·
+  <a href="https://en.blog.agustin.top/">Creator Blog</a>
+</p>
+
 # useMailprex
 
 `useMailprex` is a React hook for handling contact forms and sending data to a server using fetch. This hook simplifies managing the form state and server response.
@@ -26,7 +47,7 @@ import useMailprex from "usemailprex";
 const ContactForm = () => {
   const webName = "Mailprex Test";
   const emailDestiny = "example@example.com";
-  const url = "http://localhost:5000/email/send";
+  const url = "https://send.mailprex.top/email/send";
   const formToken = "your-form-token";
 
   const { formData, handleChange, handleSubmit, response } = useMailprex({
@@ -156,20 +177,23 @@ export default ContactForm;
 ```
 
 
+## Example Email
+### Here is an example of how the emails sent through Mailprex will appear when they arrive at the specified email address:
+
 
 # API
 ## useMailprex
 
 ### Parameters
-- url: The server URL to send the form data to.
-- webName: The name of the website from which the form is being submitted.
-- emailDestiny: The destination email address.
-- formToken: The form token for authentication.
+- **url:** The server URL to send the form data to.
+- **webName:** The name of the website from which the form is being submitted.
+- **emailDestiny:** The destination email address.
+- **formToken:** The form token for authentication.
 ### Returns
-- formData: An object containing the form data.
-- handleChange: A function to handle changes in the form fields.
-- handleSubmit: A function to handle form submission.
-- response: An object containing data, loading, and error regarding the API response.
-- 
+- **formData:** An object containing the form data.
+- **handleChange:** A function to handle changes in the form fields.
+- **handleSubmit:** A function to handle form submission.
+- **response:** An object containing data, loading, and error regarding the API response.
+
 ## Contributing
 ***Contributions are welcome. Please open an issue or a pull request for any improvements or fixes.***
