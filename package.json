@@ -1,17 +1,35 @@
 {
   "name": "useMailprex",
   "version": "1.0.0",
-  "description": "",
+  "description": "Send Emails from your Website with Ease",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "email",
+    "send",
+    "mail",
+    "form",
+    "hook",
+    "react",
+    "frontend",
+    "website"
+  ],
   "author": "Agustin Avellaneda <https://agustin.top>",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitdraig/useMailprex"
+  },
+  "bugs": {
+    "url": "https://github.com/nitdraig/useMailprex/issues"
+  },
+  "homepage": "https://github.com/nitdraig/useMailprex#readme",
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "typescript": "^5.4.5"
+    "@types/react": "^18.0.0",
+    "typescript": "^4.5.4"
   },
   "dependencies": {
     "react": "^18.3.1"
