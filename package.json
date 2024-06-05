@@ -1,6 +1,6 @@
 {
   "name": "usemailprex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send Emails from your Website with Ease",
   "main": "index.js",
   "types": "index.d.ts",
@@ -21,12 +21,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nitdraig/useMailprex"
+    "url": "git+https://github.com/nitdraig/usemailprex"
   },
   "bugs": {
-    "url": "https://github.com/nitdraig/useMailprex/issues"
+    "url": "https://github.com/nitdraig/usemailprex/issues"
   },
-  "homepage": "https://github.com/nitdraig/useMailprex#readme",
+  "homepage": "https://github.com/nitdraig/usemailprex#readme",
   "devDependencies": {
     "@types/react": "^18.0.0",
     "typescript": "^4.5.4"
