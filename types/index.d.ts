@@ -16,4 +16,6 @@ declare function useMailprex(props: UseMailprexProps): {
   response: ApiResponse<any>;
 };
 
-export default useMailprex;
+declare module "usemailprex" {
+  export = useMailprex;
+}
