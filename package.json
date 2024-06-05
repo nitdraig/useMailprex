@@ -1,11 +1,11 @@
 {
   "name": "usemailprex",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Send Emails from your Website with Ease",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "src/types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [
     "email",
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/nitdraig/usemailprex#readme",
   "devDependencies": {
     "@types/react": "^18.0.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.9.5"
   },
   "dependencies": {
     "react": "^18.3.1"
