@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://agustin.top/">
-    <img src="https://res.cloudinary.com/draig/image/upload/v1717622939/mailprex/eapviaubjcmlkosqwxw6.png" alt="Mailprex Logo" width="200" height="165">
+    <img src="https://res.cloudinary.com/draig/image/upload/v1717622939/mailprex/eapviaubjcmlkosqwxw6.png" alt="Mailprex Logo" width="200" height="200">
   </a>
 </p>
 
@@ -179,7 +179,11 @@ export default ContactForm;
 
 ## Example Email
 ### Here is an example of how the emails sent through Mailprex will appear when they arrive at the specified email address:
-
+<div align="center">
+  <a href="https://agustin.top/">
+    <img src="https://res.cloudinary.com/draig/image/upload/v1717624258/mailprex/uvc7mvn49rlrpzpeq3vj.png" alt="Example Email" width="800" height="600"/>
+  </a>
+</div>
 
 # API
 ## useMailprex
