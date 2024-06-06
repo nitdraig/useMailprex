@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://agustin.top/">
-    <img src="https://res.cloudinary.com/draig/image/upload/v1717622939/mailprex/eapviaubjcmlkosqwxw6.png" alt="Mailprex Logo" width="200" height="200">
+    <img src="https://res.cloudinary.com/draig/image/upload/v1717633081/mailprex/iwzlpdbt3uclxt5mwll3.png" alt="Mailprex Logo" width="200" height="200">
   </a>
 </p>
 
