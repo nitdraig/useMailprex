@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://agustin.top/">
+  <a href="https://mailprex.top/">
     <img src="https://res.cloudinary.com/draig/image/upload/v1717633081/mailprex/iwzlpdbt3uclxt5mwll3.png" alt="Mailprex Logo" width="200" height="200">
   </a>
 </p>
@@ -9,14 +9,14 @@
 <p align="center">
  Send Emails from your Website with Ease
   <br>
-  <a href="https://agustin.top/"><strong>Explore Mailprex docs »</strong></a>
+  <a href="https://docs.mailprex.top/"><strong>Explore Mailprex docs »</strong></a>
   <br>
   <br>
   <a href="https://github.com/nitdraig/usemailprex/issues">Report bug</a>
   ·
   <a href="https://github.com/nitdraig/usemailprex/issues">Request feature</a>
   ·
-  <a href="https://en.blog.agustin.top/">Creator Blog</a>
+  <a href="https://agustin.top/">Creator Portfolio</a>
 </p>
 
 # useMailprex
@@ -47,7 +47,7 @@ import useMailprex from "usemailprex";
 const ContactForm = () => {
   const webName = "Mailprex Test";
   const emailDestiny = "example@example.com";
-  const url = "https://send.mailprex.top/email/send";
+  const url = "https://api.mailprex.top/email/send";
   const formToken = "your-form-token";
 
   const { formData, handleChange, handleSubmit, response } = useMailprex({
@@ -180,7 +180,7 @@ export default ContactForm;
 ## Example Email
 ### Here is an example of how the emails sent through Mailprex will appear when they arrive at the specified email address:
 <div align="center">
-  <a href="https://agustin.top/">
+  <a href="">
     <img src="https://res.cloudinary.com/draig/image/upload/v1717624258/mailprex/uvc7mvn49rlrpzpeq3vj.png" alt="Example Email" width="700" height="300"/>
   </a>
 </div>
