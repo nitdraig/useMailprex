@@ -32,17 +32,21 @@ Mailprex is a service designed to facilitate sending emails from web forms. It h
 First, install the package using npm:
 
 ```bash
-npm install usemailprex 
+npm install usemailprex-react 
 
 ```
 ## Usage
+- Register in `https://mailprex.top/`, Confirm your account
+- Login in `https://mailprex.top/`, Get a formToken in dashboard
+- Install the hook in your project and **Enjoy**
+
 Here is an example of how to use useMailprex in a contact form component in a react.js application.
 
 
 ```bash
 "use client";
 import React from "react";
-import useMailprex from "usemailprex";
+import { useMailprex } from "usemailprex-react";
 
 const ContactForm = () => {
   const webName = "Mailprex Test";
@@ -56,10 +60,23 @@ const ContactForm = () => {
     emailDestiny,
     formToken,
   });
+   const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    await handleSubmit(e);
+    if (response.error) {
+      alert(
+    "Error sending message. Try again later.",
+            );
+    } else {
+       alert( 
+        "Message sent succesfully!"
+         );
+    }
+  };
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={handleFormSubmit}
       className="max-w-lg mx-auto p-4 bg-white shadow-md rounded-lg"
     >
       <div className="mb-4">
