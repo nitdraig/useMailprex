@@ -1,6 +1,6 @@
 {
   "name": "usemailprex-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Send Emails from your Website with Ease",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/nitdraig/usemailprex/issues"
   },
-  "homepage": "https://github.com/nitdraig/usemailprex#readme",
+  "homepage": "https://mailprex.top",
   "devDependencies": {
     "@types/react": "^18.0.0",
     "typescript": "^4.9.5"
